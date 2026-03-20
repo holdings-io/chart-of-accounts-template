@@ -1,0 +1,62 @@
+code,name,type,subtype,description,isHeader
+1000,Assets,Asset,Header,Top-level asset category,true
+1010,Cash and Cash Equivalents,Asset,Cash,Header for cash accounts,true
+1011,Checking Account,Asset,Cash,Primary business checking account,false
+1012,Savings Account,Asset,Cash,Business savings account,false
+1013,Petty Cash,Asset,Cash,Small on-hand cash for minor expenses,false
+1100,Accounts Receivable,Asset,Receivable,Amounts owed by customers,false
+1110,Allowance for Doubtful Accounts,Asset,Receivable,Estimated uncollectible receivables (contra),false
+1200,Inventory,Asset,Inventory,Goods held for sale,false
+1300,Prepaid Expenses,Asset,Prepaid,Payments made in advance,false
+1400,Fixed Assets,Asset,Fixed Asset,Header for long-term tangible assets,true
+1410,Furniture & Equipment,Asset,Fixed Asset,Office furniture and business equipment,false
+1420,Vehicles,Asset,Fixed Asset,Business vehicles,false
+1430,Leasehold Improvements,Asset,Fixed Asset,Improvements to leased property,false
+1450,Accumulated Depreciation,Asset,Fixed Asset,Total depreciation on fixed assets (contra),false
+1500,Other Assets,Asset,Other Asset,Security deposits and other long-term assets,false
+2000,Liabilities,Liability,Header,Top-level liability category,true
+2010,Accounts Payable,Liability,Payable,Amounts owed to vendors and suppliers,false
+2100,Credit Card Payable,Liability,Payable,Outstanding credit card balances,false
+2200,Accrued Liabilities,Liability,Accrued,Expenses incurred but not yet paid,false
+2300,Payroll Liabilities,Liability,Payroll,Header for payroll-related obligations,true
+2310,Wages Payable,Liability,Payroll,Employee wages earned but not yet paid,false
+2320,Payroll Taxes Payable,Liability,Payroll,"Federal, state, and local payroll taxes owed",false
+2400,Sales Tax Payable,Liability,Tax,Collected sales tax owed to government,false
+2500,Short-Term Loans,Liability,Loan,Loans due within one year,false
+2600,Long-Term Loans,Liability,Loan,Loans and notes payable due after one year,false
+2700,Unearned Revenue,Liability,Deferred,Payments received for services not yet delivered,false
+3000,Equity,Equity,Header,Top-level equity category,true
+3010,Owners Equity,Equity,Owner Equity,Owners investment in the business,false
+3020,Owners Draws,Equity,Owner Equity,Withdrawals by the owner,false
+3030,Retained Earnings,Equity,Retained Earnings,Accumulated net income retained in the business,false
+4000,Revenue,Revenue,Header,Top-level revenue category,true
+4010,Sales Revenue,Revenue,Operating Revenue,Income from sale of goods or services,false
+4020,Service Revenue,Revenue,Operating Revenue,Income from services rendered,false
+4030,Returns and Allowances,Revenue,Operating Revenue,Reductions to revenue from returns (contra),false
+4100,Other Income,Revenue,Other Income,Header for non-operating income,true
+4110,Interest Income,Revenue,Other Income,Interest earned on bank accounts,false
+4120,Gain on Asset Sale,Revenue,Other Income,Profit from selling business assets,false
+5000,Cost of Goods Sold,Expense,COGS,Header for direct costs,true
+5010,Materials and Supplies,Expense,COGS,Raw materials used in production,false
+5020,Direct Labor,Expense,COGS,Labor costs tied to production,false
+5030,Shipping and Delivery,Expense,COGS,Costs to ship products to customers,false
+5040,Subcontractor Costs,Expense,COGS,Payments to subcontractors,false
+6000,Operating Expenses,Expense,Header,Top-level operating expense category,true
+6010,Rent and Lease,Expense,Occupancy,Office or facility rent payments,false
+6020,Utilities,Expense,Occupancy,"Electric, gas, water, and internet services",false
+6030,Office Supplies,Expense,Office,General office supplies and consumables,false
+6040,Insurance,Expense,Insurance,Business insurance premiums,false
+6050,Salaries and Wages,Expense,Payroll,Employee compensation,false
+6060,Payroll Taxes,Expense,Payroll,Employer portion of payroll taxes,false
+6070,Employee Benefits,Expense,Payroll,"Health insurance, retirement, etc.",false
+6080,Marketing and Advertising,Expense,Marketing,Advertising and marketing campaigns,false
+6090,Professional Fees,Expense,Professional,"Legal, accounting, and consulting fees",false
+6100,Software and Subscriptions,Expense,Technology,SaaS subscriptions and software licenses,false
+6110,Travel and Meals,Expense,Travel,Business travel and meal expenses,false
+6120,Depreciation Expense,Expense,Depreciation,Periodic depreciation of fixed assets,false
+6130,Bank Fees and Charges,Expense,Financial,Bank service charges and transaction fees,false
+6140,Interest Expense,Expense,Financial,Interest paid on loans and credit lines,false
+6150,Repairs and Maintenance,Expense,Maintenance,Repairs to equipment and facilities,false
+6160,Taxes and Licenses,Expense,Tax,"Business licenses, permits, and non-income taxes",false
+6170,Bad Debt Expense,Expense,Financial,Write-off of uncollectible receivables,false
+6180,Miscellaneous Expenses,Expense,Other,Expenses not classified elsewhere,false

@@ -1,0 +1,497 @@
+{
+  "id": "small-business",
+  "name": "Small Business",
+  "organizationType": "small-business",
+  "description": "A general-purpose chart of accounts for small businesses. Covers standard asset, liability, equity, revenue, and expense categories suitable for most service and product-based businesses.",
+  "version": "1.0.0",
+  "accounts": [
+    {
+      "code": "1000",
+      "name": "Assets",
+      "type": "Asset",
+      "subtype": "Header",
+      "description": "Top-level asset category",
+      "isHeader": true
+    },
+    {
+      "code": "1010",
+      "name": "Cash and Cash Equivalents",
+      "type": "Asset",
+      "subtype": "Cash",
+      "description": "Header for cash accounts",
+      "isHeader": true
+    },
+    {
+      "code": "1011",
+      "name": "Checking Account",
+      "type": "Asset",
+      "subtype": "Cash",
+      "description": "Primary business checking account",
+      "isHeader": false
+    },
+    {
+      "code": "1012",
+      "name": "Savings Account",
+      "type": "Asset",
+      "subtype": "Cash",
+      "description": "Business savings account",
+      "isHeader": false
+    },
+    {
+      "code": "1013",
+      "name": "Petty Cash",
+      "type": "Asset",
+      "subtype": "Cash",
+      "description": "Small on-hand cash for minor expenses",
+      "isHeader": false
+    },
+    {
+      "code": "1100",
+      "name": "Accounts Receivable",
+      "type": "Asset",
+      "subtype": "Receivable",
+      "description": "Amounts owed by customers",
+      "isHeader": false
+    },
+    {
+      "code": "1110",
+      "name": "Allowance for Doubtful Accounts",
+      "type": "Asset",
+      "subtype": "Receivable",
+      "description": "Estimated uncollectible receivables (contra)",
+      "isHeader": false
+    },
+    {
+      "code": "1200",
+      "name": "Inventory",
+      "type": "Asset",
+      "subtype": "Inventory",
+      "description": "Goods held for sale",
+      "isHeader": false
+    },
+    {
+      "code": "1300",
+      "name": "Prepaid Expenses",
+      "type": "Asset",
+      "subtype": "Prepaid",
+      "description": "Payments made in advance",
+      "isHeader": false
+    },
+    {
+      "code": "1400",
+      "name": "Fixed Assets",
+      "type": "Asset",
+      "subtype": "Fixed Asset",
+      "description": "Header for long-term tangible assets",
+      "isHeader": true
+    },
+    {
+      "code": "1410",
+      "name": "Furniture & Equipment",
+      "type": "Asset",
+      "subtype": "Fixed Asset",
+      "description": "Office furniture and business equipment",
+      "isHeader": false
+    },
+    {
+      "code": "1420",
+      "name": "Vehicles",
+      "type": "Asset",
+      "subtype": "Fixed Asset",
+      "description": "Business vehicles",
+      "isHeader": false
+    },
+    {
+      "code": "1430",
+      "name": "Leasehold Improvements",
+      "type": "Asset",
+      "subtype": "Fixed Asset",
+      "description": "Improvements to leased property",
+      "isHeader": false
+    },
+    {
+      "code": "1450",
+      "name": "Accumulated Depreciation",
+      "type": "Asset",
+      "subtype": "Fixed Asset",
+      "description": "Total depreciation on fixed assets (contra)",
+      "isHeader": false
+    },
+    {
+      "code": "1500",
+      "name": "Other Assets",
+      "type": "Asset",
+      "subtype": "Other Asset",
+      "description": "Security deposits and other long-term assets",
+      "isHeader": false
+    },
+    {
+      "code": "2000",
+      "name": "Liabilities",
+      "type": "Liability",
+      "subtype": "Header",
+      "description": "Top-level liability category",
+      "isHeader": true
+    },
+    {
+      "code": "2010",
+      "name": "Accounts Payable",
+      "type": "Liability",
+      "subtype": "Payable",
+      "description": "Amounts owed to vendors and suppliers",
+      "isHeader": false
+    },
+    {
+      "code": "2100",
+      "name": "Credit Card Payable",
+      "type": "Liability",
+      "subtype": "Payable",
+      "description": "Outstanding credit card balances",
+      "isHeader": false
+    },
+    {
+      "code": "2200",
+      "name": "Accrued Liabilities",
+      "type": "Liability",
+      "subtype": "Accrued",
+      "description": "Expenses incurred but not yet paid",
+      "isHeader": false
+    },
+    {
+      "code": "2300",
+      "name": "Payroll Liabilities",
+      "type": "Liability",
+      "subtype": "Payroll",
+      "description": "Header for payroll-related obligations",
+      "isHeader": true
+    },
+    {
+      "code": "2310",
+      "name": "Wages Payable",
+      "type": "Liability",
+      "subtype": "Payroll",
+      "description": "Employee wages earned but not yet paid",
+      "isHeader": false
+    },
+    {
+      "code": "2320",
+      "name": "Payroll Taxes Payable",
+      "type": "Liability",
+      "subtype": "Payroll",
+      "description": "Federal, state, and local payroll taxes owed",
+      "isHeader": false
+    },
+    {
+      "code": "2400",
+      "name": "Sales Tax Payable",
+      "type": "Liability",
+      "subtype": "Tax",
+      "description": "Collected sales tax owed to government",
+      "isHeader": false
+    },
+    {
+      "code": "2500",
+      "name": "Short-Term Loans",
+      "type": "Liability",
+      "subtype": "Loan",
+      "description": "Loans due within one year",
+      "isHeader": false
+    },
+    {
+      "code": "2600",
+      "name": "Long-Term Loans",
+      "type": "Liability",
+      "subtype": "Loan",
+      "description": "Loans and notes payable due after one year",
+      "isHeader": false
+    },
+    {
+      "code": "2700",
+      "name": "Unearned Revenue",
+      "type": "Liability",
+      "subtype": "Deferred",
+      "description": "Payments received for services not yet delivered",
+      "isHeader": false
+    },
+    {
+      "code": "3000",
+      "name": "Equity",
+      "type": "Equity",
+      "subtype": "Header",
+      "description": "Top-level equity category",
+      "isHeader": true
+    },
+    {
+      "code": "3010",
+      "name": "Owners Equity",
+      "type": "Equity",
+      "subtype": "Owner Equity",
+      "description": "Owners investment in the business",
+      "isHeader": false
+    },
+    {
+      "code": "3020",
+      "name": "Owners Draws",
+      "type": "Equity",
+      "subtype": "Owner Equity",
+      "description": "Withdrawals by the owner",
+      "isHeader": false
+    },
+    {
+      "code": "3030",
+      "name": "Retained Earnings",
+      "type": "Equity",
+      "subtype": "Retained Earnings",
+      "description": "Accumulated net income retained in the business",
+      "isHeader": false
+    },
+    {
+      "code": "4000",
+      "name": "Revenue",
+      "type": "Revenue",
+      "subtype": "Header",
+      "description": "Top-level revenue category",
+      "isHeader": true
+    },
+    {
+      "code": "4010",
+      "name": "Sales Revenue",
+      "type": "Revenue",
+      "subtype": "Operating Revenue",
+      "description": "Income from sale of goods or services",
+      "isHeader": false
+    },
+    {
+      "code": "4020",
+      "name": "Service Revenue",
+      "type": "Revenue",
+      "subtype": "Operating Revenue",
+      "description": "Income from services rendered",
+      "isHeader": false
+    },
+    {
+      "code": "4030",
+      "name": "Returns and Allowances",
+      "type": "Revenue",
+      "subtype": "Operating Revenue",
+      "description": "Reductions to revenue from returns (contra)",
+      "isHeader": false
+    },
+    {
+      "code": "4100",
+      "name": "Other Income",
+      "type": "Revenue",
+      "subtype": "Other Income",
+      "description": "Header for non-operating income",
+      "isHeader": true
+    },
+    {
+      "code": "4110",
+      "name": "Interest Income",
+      "type": "Revenue",
+      "subtype": "Other Income",
+      "description": "Interest earned on bank accounts",
+      "isHeader": false
+    },
+    {
+      "code": "4120",
+      "name": "Gain on Asset Sale",
+      "type": "Revenue",
+      "subtype": "Other Income",
+      "description": "Profit from selling business assets",
+      "isHeader": false
+    },
+    {
+      "code": "5000",
+      "name": "Cost of Goods Sold",
+      "type": "Expense",
+      "subtype": "COGS",
+      "description": "Header for direct costs",
+      "isHeader": true
+    },
+    {
+      "code": "5010",
+      "name": "Materials and Supplies",
+      "type": "Expense",
+      "subtype": "COGS",
+      "description": "Raw materials used in production",
+      "isHeader": false
+    },
+    {
+      "code": "5020",
+      "name": "Direct Labor",
+      "type": "Expense",
+      "subtype": "COGS",
+      "description": "Labor costs tied to production",
+      "isHeader": false
+    },
+    {
+      "code": "5030",
+      "name": "Shipping and Delivery",
+      "type": "Expense",
+      "subtype": "COGS",
+      "description": "Costs to ship products to customers",
+      "isHeader": false
+    },
+    {
+      "code": "5040",
+      "name": "Subcontractor Costs",
+      "type": "Expense",
+      "subtype": "COGS",
+      "description": "Payments to subcontractors",
+      "isHeader": false
+    },
+    {
+      "code": "6000",
+      "name": "Operating Expenses",
+      "type": "Expense",
+      "subtype": "Header",
+      "description": "Top-level operating expense category",
+      "isHeader": true
+    },
+    {
+      "code": "6010",
+      "name": "Rent and Lease",
+      "type": "Expense",
+      "subtype": "Occupancy",
+      "description": "Office or facility rent payments",
+      "isHeader": false
+    },
+    {
+      "code": "6020",
+      "name": "Utilities",
+      "type": "Expense",
+      "subtype": "Occupancy",
+      "description": "Electric, gas, water, and internet services",
+      "isHeader": false
+    },
+    {
+      "code": "6030",
+      "name": "Office Supplies",
+      "type": "Expense",
+      "subtype": "Office",
+      "description": "General office supplies and consumables",
+      "isHeader": false
+    },
+    {
+      "code": "6040",
+      "name": "Insurance",
+      "type": "Expense",
+      "subtype": "Insurance",
+      "description": "Business insurance premiums",
+      "isHeader": false
+    },
+    {
+      "code": "6050",
+      "name": "Salaries and Wages",
+      "type": "Expense",
+      "subtype": "Payroll",
+      "description": "Employee compensation",
+      "isHeader": false
+    },
+    {
+      "code": "6060",
+      "name": "Payroll Taxes",
+      "type": "Expense",
+      "subtype": "Payroll",
+      "description": "Employer portion of payroll taxes",
+      "isHeader": false
+    },
+    {
+      "code": "6070",
+      "name": "Employee Benefits",
+      "type": "Expense",
+      "subtype": "Payroll",
+      "description": "Health insurance, retirement, etc.",
+      "isHeader": false
+    },
+    {
+      "code": "6080",
+      "name": "Marketing and Advertising",
+      "type": "Expense",
+      "subtype": "Marketing",
+      "description": "Advertising and marketing campaigns",
+      "isHeader": false
+    },
+    {
+      "code": "6090",
+      "name": "Professional Fees",
+      "type": "Expense",
+      "subtype": "Professional",
+      "description": "Legal, accounting, and consulting fees",
+      "isHeader": false
+    },
+    {
+      "code": "6100",
+      "name": "Software and Subscriptions",
+      "type": "Expense",
+      "subtype": "Technology",
+      "description": "SaaS subscriptions and software licenses",
+      "isHeader": false
+    },
+    {
+      "code": "6110",
+      "name": "Travel and Meals",
+      "type": "Expense",
+      "subtype": "Travel",
+      "description": "Business travel and meal expenses",
+      "isHeader": false
+    },
+    {
+      "code": "6120",
+      "name": "Depreciation Expense",
+      "type": "Expense",
+      "subtype": "Depreciation",
+      "description": "Periodic depreciation of fixed assets",
+      "isHeader": false
+    },
+    {
+      "code": "6130",
+      "name": "Bank Fees and Charges",
+      "type": "Expense",
+      "subtype": "Financial",
+      "description": "Bank service charges and transaction fees",
+      "isHeader": false
+    },
+    {
+      "code": "6140",
+      "name": "Interest Expense",
+      "type": "Expense",
+      "subtype": "Financial",
+      "description": "Interest paid on loans and credit lines",
+      "isHeader": false
+    },
+    {
+      "code": "6150",
+      "name": "Repairs and Maintenance",
+      "type": "Expense",
+      "subtype": "Maintenance",
+      "description": "Repairs to equipment and facilities",
+      "isHeader": false
+    },
+    {
+      "code": "6160",
+      "name": "Taxes and Licenses",
+      "type": "Expense",
+      "subtype": "Tax",
+      "description": "Business licenses, permits, and non-income taxes",
+      "isHeader": false
+    },
+    {
+      "code": "6170",
+      "name": "Bad Debt Expense",
+      "type": "Expense",
+      "subtype": "Financial",
+      "description": "Write-off of uncollectible receivables",
+      "isHeader": false
+    },
+    {
+      "code": "6180",
+      "name": "Miscellaneous Expenses",
+      "type": "Expense",
+      "subtype": "Other",
+      "description": "Expenses not classified elsewhere",
+      "isHeader": false
+    }
+  ]
+}

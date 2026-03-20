@@ -1,0 +1,44 @@
+{
+  "name": "@holdings-io/chart-of-accounts-template",
+  "version": "1.0.0",
+  "description": "Comprehensive chart of accounts templates for small businesses, nonprofits, and churches. Structured JSON, CSV, and TypeScript types.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "templates",
+    "csv",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "chart-of-accounts",
+    "accounting",
+    "bookkeeping",
+    "small-business",
+    "nonprofit",
+    "church",
+    "finance",
+    "ledger",
+    "general-ledger",
+    "coa",
+    "template",
+    "holdings"
+  ],
+  "author": "Holdings <engineering@holdings.io> (https://getholdings.com)",
+  "license": "MIT",
+  "homepage": "https://github.com/holdings-io/chart-of-accounts-template#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/holdings-io/chart-of-accounts-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/holdings-io/chart-of-accounts-template/issues"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}

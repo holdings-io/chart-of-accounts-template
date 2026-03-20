@@ -1,0 +1,697 @@
+{
+  "id": "church",
+  "name": "Church",
+  "organizationType": "church",
+  "description": "A chart of accounts tailored for churches and religious organizations. Includes accounts for tithes, offerings, missions, building funds, ministry programs, benevolence, and denominational obligations.",
+  "version": "1.0.0",
+  "accounts": [
+    {
+      "code": "1000",
+      "name": "Assets",
+      "type": "Asset",
+      "subtype": "Header",
+      "description": "Top-level asset category",
+      "isHeader": true
+    },
+    {
+      "code": "1010",
+      "name": "Cash and Cash Equivalents",
+      "type": "Asset",
+      "subtype": "Cash",
+      "description": "Header for cash accounts",
+      "isHeader": true
+    },
+    {
+      "code": "1011",
+      "name": "General Fund Checking",
+      "type": "Asset",
+      "subtype": "Cash",
+      "description": "Primary operating checking account",
+      "isHeader": false
+    },
+    {
+      "code": "1012",
+      "name": "Savings Account",
+      "type": "Asset",
+      "subtype": "Cash",
+      "description": "Church savings account",
+      "isHeader": false
+    },
+    {
+      "code": "1013",
+      "name": "Petty Cash",
+      "type": "Asset",
+      "subtype": "Cash",
+      "description": "Small on-hand cash for minor expenses",
+      "isHeader": false
+    },
+    {
+      "code": "1014",
+      "name": "Building Fund Account",
+      "type": "Asset",
+      "subtype": "Cash",
+      "description": "Separate bank account for building fund",
+      "isHeader": false
+    },
+    {
+      "code": "1015",
+      "name": "Missions Fund Account",
+      "type": "Asset",
+      "subtype": "Cash",
+      "description": "Separate bank account for missions fund",
+      "isHeader": false
+    },
+    {
+      "code": "1016",
+      "name": "Benevolence Fund Account",
+      "type": "Asset",
+      "subtype": "Cash",
+      "description": "Separate bank account for benevolence fund",
+      "isHeader": false
+    },
+    {
+      "code": "1100",
+      "name": "Accounts Receivable",
+      "type": "Asset",
+      "subtype": "Receivable",
+      "description": "Amounts owed to the church",
+      "isHeader": false
+    },
+    {
+      "code": "1200",
+      "name": "Prepaid Expenses",
+      "type": "Asset",
+      "subtype": "Prepaid",
+      "description": "Payments made in advance",
+      "isHeader": false
+    },
+    {
+      "code": "1300",
+      "name": "Investments",
+      "type": "Asset",
+      "subtype": "Investment",
+      "description": "Church investment accounts",
+      "isHeader": false
+    },
+    {
+      "code": "1400",
+      "name": "Fixed Assets",
+      "type": "Asset",
+      "subtype": "Fixed Asset",
+      "description": "Header for long-term tangible assets",
+      "isHeader": true
+    },
+    {
+      "code": "1410",
+      "name": "Land",
+      "type": "Asset",
+      "subtype": "Fixed Asset",
+      "description": "Church-owned land",
+      "isHeader": false
+    },
+    {
+      "code": "1420",
+      "name": "Buildings",
+      "type": "Asset",
+      "subtype": "Fixed Asset",
+      "description": "Church buildings and sanctuaries",
+      "isHeader": false
+    },
+    {
+      "code": "1430",
+      "name": "Furniture and Fixtures",
+      "type": "Asset",
+      "subtype": "Fixed Asset",
+      "description": "Pews, pulpit furniture, office furniture",
+      "isHeader": false
+    },
+    {
+      "code": "1440",
+      "name": "Sound and Media Equipment",
+      "type": "Asset",
+      "subtype": "Fixed Asset",
+      "description": "Audio, video, and livestream equipment",
+      "isHeader": false
+    },
+    {
+      "code": "1450",
+      "name": "Musical Instruments",
+      "type": "Asset",
+      "subtype": "Fixed Asset",
+      "description": "Pianos, organs, and other instruments",
+      "isHeader": false
+    },
+    {
+      "code": "1460",
+      "name": "Vehicles",
+      "type": "Asset",
+      "subtype": "Fixed Asset",
+      "description": "Church vans and buses",
+      "isHeader": false
+    },
+    {
+      "code": "1470",
+      "name": "Accumulated Depreciation",
+      "type": "Asset",
+      "subtype": "Fixed Asset",
+      "description": "Total depreciation (contra)",
+      "isHeader": false
+    },
+    {
+      "code": "2000",
+      "name": "Liabilities",
+      "type": "Liability",
+      "subtype": "Header",
+      "description": "Top-level liability category",
+      "isHeader": true
+    },
+    {
+      "code": "2010",
+      "name": "Accounts Payable",
+      "type": "Liability",
+      "subtype": "Payable",
+      "description": "Amounts owed to vendors",
+      "isHeader": false
+    },
+    {
+      "code": "2100",
+      "name": "Credit Card Payable",
+      "type": "Liability",
+      "subtype": "Payable",
+      "description": "Outstanding credit card balances",
+      "isHeader": false
+    },
+    {
+      "code": "2200",
+      "name": "Accrued Liabilities",
+      "type": "Liability",
+      "subtype": "Accrued",
+      "description": "Expenses incurred but not yet paid",
+      "isHeader": false
+    },
+    {
+      "code": "2300",
+      "name": "Payroll Liabilities",
+      "type": "Liability",
+      "subtype": "Payroll",
+      "description": "Header for payroll obligations",
+      "isHeader": true
+    },
+    {
+      "code": "2310",
+      "name": "Salaries Payable",
+      "type": "Liability",
+      "subtype": "Payroll",
+      "description": "Pastor and staff wages not yet paid",
+      "isHeader": false
+    },
+    {
+      "code": "2320",
+      "name": "Payroll Taxes Payable",
+      "type": "Liability",
+      "subtype": "Payroll",
+      "description": "Payroll taxes withheld and owed",
+      "isHeader": false
+    },
+    {
+      "code": "2330",
+      "name": "Housing Allowance Payable",
+      "type": "Liability",
+      "subtype": "Payroll",
+      "description": "Minister housing allowance obligations",
+      "isHeader": false
+    },
+    {
+      "code": "2400",
+      "name": "Mortgage Payable",
+      "type": "Liability",
+      "subtype": "Loan",
+      "description": "Building mortgage balance",
+      "isHeader": false
+    },
+    {
+      "code": "2500",
+      "name": "Other Loans Payable",
+      "type": "Liability",
+      "subtype": "Loan",
+      "description": "Vehicle loans and other debt",
+      "isHeader": false
+    },
+    {
+      "code": "2600",
+      "name": "Designated Funds Held",
+      "type": "Liability",
+      "subtype": "Designated",
+      "description": "Donor-designated funds for specific purposes",
+      "isHeader": false
+    },
+    {
+      "code": "3000",
+      "name": "Net Assets",
+      "type": "Equity",
+      "subtype": "Header",
+      "description": "Top-level net assets category",
+      "isHeader": true
+    },
+    {
+      "code": "3100",
+      "name": "Unrestricted Net Assets",
+      "type": "Equity",
+      "subtype": "Without Donor Restrictions",
+      "description": "General fund net assets",
+      "isHeader": false
+    },
+    {
+      "code": "3200",
+      "name": "Temporarily Restricted Net Assets",
+      "type": "Equity",
+      "subtype": "With Donor Restrictions",
+      "description": "Funds restricted for specific purposes",
+      "isHeader": false
+    },
+    {
+      "code": "3300",
+      "name": "Permanently Restricted Net Assets",
+      "type": "Equity",
+      "subtype": "With Donor Restrictions",
+      "description": "Endowment funds with permanent restrictions",
+      "isHeader": false
+    },
+    {
+      "code": "3400",
+      "name": "Net Assets in Fixed Assets",
+      "type": "Equity",
+      "subtype": "Fixed Asset Equity",
+      "description": "Net assets invested in property and equipment",
+      "isHeader": false
+    },
+    {
+      "code": "4000",
+      "name": "Revenue and Support",
+      "type": "Revenue",
+      "subtype": "Header",
+      "description": "Top-level revenue category",
+      "isHeader": true
+    },
+    {
+      "code": "4010",
+      "name": "Tithes",
+      "type": "Revenue",
+      "subtype": "Tithes and Offerings",
+      "description": "Regular tithe contributions from members",
+      "isHeader": false
+    },
+    {
+      "code": "4020",
+      "name": "General Offerings",
+      "type": "Revenue",
+      "subtype": "Tithes and Offerings",
+      "description": "Undesignated weekly offerings",
+      "isHeader": false
+    },
+    {
+      "code": "4030",
+      "name": "Online Giving",
+      "type": "Revenue",
+      "subtype": "Tithes and Offerings",
+      "description": "Donations received through online platforms",
+      "isHeader": false
+    },
+    {
+      "code": "4040",
+      "name": "Building Fund Contributions",
+      "type": "Revenue",
+      "subtype": "Designated Giving",
+      "description": "Gifts designated for building projects",
+      "isHeader": false
+    },
+    {
+      "code": "4050",
+      "name": "Missions Giving",
+      "type": "Revenue",
+      "subtype": "Designated Giving",
+      "description": "Contributions designated for mission work",
+      "isHeader": false
+    },
+    {
+      "code": "4060",
+      "name": "Benevolence Fund Contributions",
+      "type": "Revenue",
+      "subtype": "Designated Giving",
+      "description": "Gifts designated for benevolence ministry",
+      "isHeader": false
+    },
+    {
+      "code": "4070",
+      "name": "Youth Ministry Contributions",
+      "type": "Revenue",
+      "subtype": "Designated Giving",
+      "description": "Gifts designated for youth programs",
+      "isHeader": false
+    },
+    {
+      "code": "4080",
+      "name": "Special Offerings",
+      "type": "Revenue",
+      "subtype": "Special",
+      "description": "Holiday, revival, and special event offerings",
+      "isHeader": false
+    },
+    {
+      "code": "4090",
+      "name": "Fundraising Event Revenue",
+      "type": "Revenue",
+      "subtype": "Events",
+      "description": "Income from church fundraising events",
+      "isHeader": false
+    },
+    {
+      "code": "4100",
+      "name": "Facility Rental Income",
+      "type": "Revenue",
+      "subtype": "Other Income",
+      "description": "Income from renting church facilities",
+      "isHeader": false
+    },
+    {
+      "code": "4110",
+      "name": "Interest and Investment Income",
+      "type": "Revenue",
+      "subtype": "Investment",
+      "description": "Interest earned on accounts and investments",
+      "isHeader": false
+    },
+    {
+      "code": "4120",
+      "name": "Bookstore and Media Sales",
+      "type": "Revenue",
+      "subtype": "Other Income",
+      "description": "Sales from church bookstore or media",
+      "isHeader": false
+    },
+    {
+      "code": "4130",
+      "name": "Other Revenue",
+      "type": "Revenue",
+      "subtype": "Other Income",
+      "description": "Revenue from other sources",
+      "isHeader": false
+    },
+    {
+      "code": "5000",
+      "name": "Personnel Expenses",
+      "type": "Expense",
+      "subtype": "Header",
+      "description": "Top-level personnel expense category",
+      "isHeader": true
+    },
+    {
+      "code": "5010",
+      "name": "Pastor Salary",
+      "type": "Expense",
+      "subtype": "Pastoral",
+      "description": "Senior pastor compensation",
+      "isHeader": false
+    },
+    {
+      "code": "5020",
+      "name": "Pastor Housing Allowance",
+      "type": "Expense",
+      "subtype": "Pastoral",
+      "description": "Minister housing allowance per IRS Section 107",
+      "isHeader": false
+    },
+    {
+      "code": "5030",
+      "name": "Associate Pastor Salary",
+      "type": "Expense",
+      "subtype": "Pastoral",
+      "description": "Associate and assistant pastor compensation",
+      "isHeader": false
+    },
+    {
+      "code": "5040",
+      "name": "Staff Salaries",
+      "type": "Expense",
+      "subtype": "Staff",
+      "description": "Administrative and support staff wages",
+      "isHeader": false
+    },
+    {
+      "code": "5050",
+      "name": "Payroll Taxes",
+      "type": "Expense",
+      "subtype": "Staff",
+      "description": "Employer portion of payroll taxes",
+      "isHeader": false
+    },
+    {
+      "code": "5060",
+      "name": "Employee Benefits",
+      "type": "Expense",
+      "subtype": "Staff",
+      "description": "Health insurance, retirement, and other benefits",
+      "isHeader": false
+    },
+    {
+      "code": "5070",
+      "name": "Workers Compensation",
+      "type": "Expense",
+      "subtype": "Staff",
+      "description": "Workers compensation insurance",
+      "isHeader": false
+    },
+    {
+      "code": "5080",
+      "name": "Continuing Education",
+      "type": "Expense",
+      "subtype": "Pastoral",
+      "description": "Pastor and staff professional development",
+      "isHeader": false
+    },
+    {
+      "code": "6000",
+      "name": "Facility Expenses",
+      "type": "Expense",
+      "subtype": "Header",
+      "description": "Top-level facility expense category",
+      "isHeader": true
+    },
+    {
+      "code": "6010",
+      "name": "Mortgage/Rent Payment",
+      "type": "Expense",
+      "subtype": "Occupancy",
+      "description": "Building mortgage or rent payments",
+      "isHeader": false
+    },
+    {
+      "code": "6020",
+      "name": "Utilities",
+      "type": "Expense",
+      "subtype": "Occupancy",
+      "description": "Electric, gas, water, and sewer",
+      "isHeader": false
+    },
+    {
+      "code": "6030",
+      "name": "Telephone and Internet",
+      "type": "Expense",
+      "subtype": "Occupancy",
+      "description": "Phone and internet services",
+      "isHeader": false
+    },
+    {
+      "code": "6040",
+      "name": "Property Insurance",
+      "type": "Expense",
+      "subtype": "Insurance",
+      "description": "Building and property insurance",
+      "isHeader": false
+    },
+    {
+      "code": "6050",
+      "name": "Maintenance and Repairs",
+      "type": "Expense",
+      "subtype": "Maintenance",
+      "description": "Building and grounds maintenance",
+      "isHeader": false
+    },
+    {
+      "code": "6060",
+      "name": "Janitorial and Cleaning",
+      "type": "Expense",
+      "subtype": "Maintenance",
+      "description": "Cleaning services and supplies",
+      "isHeader": false
+    },
+    {
+      "code": "6070",
+      "name": "Landscaping",
+      "type": "Expense",
+      "subtype": "Maintenance",
+      "description": "Grounds and landscape maintenance",
+      "isHeader": false
+    },
+    {
+      "code": "7000",
+      "name": "Ministry and Program Expenses",
+      "type": "Expense",
+      "subtype": "Header",
+      "description": "Top-level ministry expense category",
+      "isHeader": true
+    },
+    {
+      "code": "7010",
+      "name": "Worship and Music Ministry",
+      "type": "Expense",
+      "subtype": "Ministry",
+      "description": "Music, worship supplies, licenses (CCLI)",
+      "isHeader": false
+    },
+    {
+      "code": "7020",
+      "name": "Childrens Ministry",
+      "type": "Expense",
+      "subtype": "Ministry",
+      "description": "Sunday school, VBS, and childrens programs",
+      "isHeader": false
+    },
+    {
+      "code": "7030",
+      "name": "Youth Ministry",
+      "type": "Expense",
+      "subtype": "Ministry",
+      "description": "Youth group activities, camps, and retreats",
+      "isHeader": false
+    },
+    {
+      "code": "7040",
+      "name": "Adult Education and Small Groups",
+      "type": "Expense",
+      "subtype": "Ministry",
+      "description": "Bible studies, discipleship, and adult programs",
+      "isHeader": false
+    },
+    {
+      "code": "7050",
+      "name": "Outreach and Evangelism",
+      "type": "Expense",
+      "subtype": "Ministry",
+      "description": "Community outreach and evangelism activities",
+      "isHeader": false
+    },
+    {
+      "code": "7060",
+      "name": "Missions Support",
+      "type": "Expense",
+      "subtype": "Missions",
+      "description": "Missionary support and mission trip costs",
+      "isHeader": false
+    },
+    {
+      "code": "7070",
+      "name": "Benevolence Distributions",
+      "type": "Expense",
+      "subtype": "Benevolence",
+      "description": "Financial assistance to individuals in need",
+      "isHeader": false
+    },
+    {
+      "code": "7080",
+      "name": "Media and Technology Ministry",
+      "type": "Expense",
+      "subtype": "Ministry",
+      "description": "Livestream, website, and media production",
+      "isHeader": false
+    },
+    {
+      "code": "7090",
+      "name": "Denominational Dues",
+      "type": "Expense",
+      "subtype": "Denominational",
+      "description": "Contributions to denomination or association",
+      "isHeader": false
+    },
+    {
+      "code": "8000",
+      "name": "Administrative Expenses",
+      "type": "Expense",
+      "subtype": "Header",
+      "description": "Top-level admin expense category",
+      "isHeader": true
+    },
+    {
+      "code": "8010",
+      "name": "Office Supplies",
+      "type": "Expense",
+      "subtype": "Office",
+      "description": "General office supplies and printing",
+      "isHeader": false
+    },
+    {
+      "code": "8020",
+      "name": "Postage and Shipping",
+      "type": "Expense",
+      "subtype": "Office",
+      "description": "Mailing and shipping costs",
+      "isHeader": false
+    },
+    {
+      "code": "8030",
+      "name": "Software and Subscriptions",
+      "type": "Expense",
+      "subtype": "Technology",
+      "description": "Church management software and subscriptions",
+      "isHeader": false
+    },
+    {
+      "code": "8040",
+      "name": "Professional Fees",
+      "type": "Expense",
+      "subtype": "Professional",
+      "description": "Audit, legal, and accounting fees",
+      "isHeader": false
+    },
+    {
+      "code": "8050",
+      "name": "Liability Insurance",
+      "type": "Expense",
+      "subtype": "Insurance",
+      "description": "General liability and umbrella insurance",
+      "isHeader": false
+    },
+    {
+      "code": "8060",
+      "name": "Bank and Processing Fees",
+      "type": "Expense",
+      "subtype": "Financial",
+      "description": "Bank charges and donation processing fees",
+      "isHeader": false
+    },
+    {
+      "code": "8070",
+      "name": "Depreciation Expense",
+      "type": "Expense",
+      "subtype": "Depreciation",
+      "description": "Periodic depreciation of fixed assets",
+      "isHeader": false
+    },
+    {
+      "code": "8080",
+      "name": "Interest Expense",
+      "type": "Expense",
+      "subtype": "Financial",
+      "description": "Interest on mortgage and loans",
+      "isHeader": false
+    },
+    {
+      "code": "8090",
+      "name": "Miscellaneous Expenses",
+      "type": "Expense",
+      "subtype": "Other",
+      "description": "Expenses not classified elsewhere",
+      "isHeader": false
+    }
+  ]
+}

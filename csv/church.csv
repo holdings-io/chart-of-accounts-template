@@ -1,0 +1,87 @@
+code,name,type,subtype,description,isHeader
+1000,Assets,Asset,Header,Top-level asset category,true
+1010,Cash and Cash Equivalents,Asset,Cash,Header for cash accounts,true
+1011,General Fund Checking,Asset,Cash,Primary operating checking account,false
+1012,Savings Account,Asset,Cash,Church savings account,false
+1013,Petty Cash,Asset,Cash,Small on-hand cash for minor expenses,false
+1014,Building Fund Account,Asset,Cash,Separate bank account for building fund,false
+1015,Missions Fund Account,Asset,Cash,Separate bank account for missions fund,false
+1016,Benevolence Fund Account,Asset,Cash,Separate bank account for benevolence fund,false
+1100,Accounts Receivable,Asset,Receivable,Amounts owed to the church,false
+1200,Prepaid Expenses,Asset,Prepaid,Payments made in advance,false
+1300,Investments,Asset,Investment,Church investment accounts,false
+1400,Fixed Assets,Asset,Fixed Asset,Header for long-term tangible assets,true
+1410,Land,Asset,Fixed Asset,Church-owned land,false
+1420,Buildings,Asset,Fixed Asset,Church buildings and sanctuaries,false
+1430,Furniture and Fixtures,Asset,Fixed Asset,"Pews, pulpit furniture, office furniture",false
+1440,Sound and Media Equipment,Asset,Fixed Asset,"Audio, video, and livestream equipment",false
+1450,Musical Instruments,Asset,Fixed Asset,"Pianos, organs, and other instruments",false
+1460,Vehicles,Asset,Fixed Asset,Church vans and buses,false
+1470,Accumulated Depreciation,Asset,Fixed Asset,Total depreciation (contra),false
+2000,Liabilities,Liability,Header,Top-level liability category,true
+2010,Accounts Payable,Liability,Payable,Amounts owed to vendors,false
+2100,Credit Card Payable,Liability,Payable,Outstanding credit card balances,false
+2200,Accrued Liabilities,Liability,Accrued,Expenses incurred but not yet paid,false
+2300,Payroll Liabilities,Liability,Payroll,Header for payroll obligations,true
+2310,Salaries Payable,Liability,Payroll,Pastor and staff wages not yet paid,false
+2320,Payroll Taxes Payable,Liability,Payroll,Payroll taxes withheld and owed,false
+2330,Housing Allowance Payable,Liability,Payroll,Minister housing allowance obligations,false
+2400,Mortgage Payable,Liability,Loan,Building mortgage balance,false
+2500,Other Loans Payable,Liability,Loan,Vehicle loans and other debt,false
+2600,Designated Funds Held,Liability,Designated,Donor-designated funds for specific purposes,false
+3000,Net Assets,Equity,Header,Top-level net assets category,true
+3100,Unrestricted Net Assets,Equity,Without Donor Restrictions,General fund net assets,false
+3200,Temporarily Restricted Net Assets,Equity,With Donor Restrictions,Funds restricted for specific purposes,false
+3300,Permanently Restricted Net Assets,Equity,With Donor Restrictions,Endowment funds with permanent restrictions,false
+3400,Net Assets in Fixed Assets,Equity,Fixed Asset Equity,Net assets invested in property and equipment,false
+4000,Revenue and Support,Revenue,Header,Top-level revenue category,true
+4010,Tithes,Revenue,Tithes and Offerings,Regular tithe contributions from members,false
+4020,General Offerings,Revenue,Tithes and Offerings,Undesignated weekly offerings,false
+4030,Online Giving,Revenue,Tithes and Offerings,Donations received through online platforms,false
+4040,Building Fund Contributions,Revenue,Designated Giving,Gifts designated for building projects,false
+4050,Missions Giving,Revenue,Designated Giving,Contributions designated for mission work,false
+4060,Benevolence Fund Contributions,Revenue,Designated Giving,Gifts designated for benevolence ministry,false
+4070,Youth Ministry Contributions,Revenue,Designated Giving,Gifts designated for youth programs,false
+4080,Special Offerings,Revenue,Special,"Holiday, revival, and special event offerings",false
+4090,Fundraising Event Revenue,Revenue,Events,Income from church fundraising events,false
+4100,Facility Rental Income,Revenue,Other Income,Income from renting church facilities,false
+4110,Interest and Investment Income,Revenue,Investment,Interest earned on accounts and investments,false
+4120,Bookstore and Media Sales,Revenue,Other Income,Sales from church bookstore or media,false
+4130,Other Revenue,Revenue,Other Income,Revenue from other sources,false
+5000,Personnel Expenses,Expense,Header,Top-level personnel expense category,true
+5010,Pastor Salary,Expense,Pastoral,Senior pastor compensation,false
+5020,Pastor Housing Allowance,Expense,Pastoral,Minister housing allowance per IRS Section 107,false
+5030,Associate Pastor Salary,Expense,Pastoral,Associate and assistant pastor compensation,false
+5040,Staff Salaries,Expense,Staff,Administrative and support staff wages,false
+5050,Payroll Taxes,Expense,Staff,Employer portion of payroll taxes,false
+5060,Employee Benefits,Expense,Staff,"Health insurance, retirement, and other benefits",false
+5070,Workers Compensation,Expense,Staff,Workers compensation insurance,false
+5080,Continuing Education,Expense,Pastoral,Pastor and staff professional development,false
+6000,Facility Expenses,Expense,Header,Top-level facility expense category,true
+6010,Mortgage/Rent Payment,Expense,Occupancy,Building mortgage or rent payments,false
+6020,Utilities,Expense,Occupancy,"Electric, gas, water, and sewer",false
+6030,Telephone and Internet,Expense,Occupancy,Phone and internet services,false
+6040,Property Insurance,Expense,Insurance,Building and property insurance,false
+6050,Maintenance and Repairs,Expense,Maintenance,Building and grounds maintenance,false
+6060,Janitorial and Cleaning,Expense,Maintenance,Cleaning services and supplies,false
+6070,Landscaping,Expense,Maintenance,Grounds and landscape maintenance,false
+7000,Ministry and Program Expenses,Expense,Header,Top-level ministry expense category,true
+7010,Worship and Music Ministry,Expense,Ministry,"Music, worship supplies, licenses (CCLI)",false
+7020,Childrens Ministry,Expense,Ministry,"Sunday school, VBS, and childrens programs",false
+7030,Youth Ministry,Expense,Ministry,"Youth group activities, camps, and retreats",false
+7040,Adult Education and Small Groups,Expense,Ministry,"Bible studies, discipleship, and adult programs",false
+7050,Outreach and Evangelism,Expense,Ministry,Community outreach and evangelism activities,false
+7060,Missions Support,Expense,Missions,Missionary support and mission trip costs,false
+7070,Benevolence Distributions,Expense,Benevolence,Financial assistance to individuals in need,false
+7080,Media and Technology Ministry,Expense,Ministry,"Livestream, website, and media production",false
+7090,Denominational Dues,Expense,Denominational,Contributions to denomination or association,false
+8000,Administrative Expenses,Expense,Header,Top-level admin expense category,true
+8010,Office Supplies,Expense,Office,General office supplies and printing,false
+8020,Postage and Shipping,Expense,Office,Mailing and shipping costs,false
+8030,Software and Subscriptions,Expense,Technology,Church management software and subscriptions,false
+8040,Professional Fees,Expense,Professional,"Audit, legal, and accounting fees",false
+8050,Liability Insurance,Expense,Insurance,General liability and umbrella insurance,false
+8060,Bank and Processing Fees,Expense,Financial,Bank charges and donation processing fees,false
+8070,Depreciation Expense,Expense,Depreciation,Periodic depreciation of fixed assets,false
+8080,Interest Expense,Expense,Financial,Interest on mortgage and loans,false
+8090,Miscellaneous Expenses,Expense,Other,Expenses not classified elsewhere,false

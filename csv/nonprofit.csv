@@ -1,0 +1,78 @@
+code,name,type,subtype,description,isHeader
+1000,Assets,Asset,Header,Top-level asset category,true
+1010,Cash and Cash Equivalents,Asset,Cash,Header for cash accounts,true
+1011,Operating Checking Account,Asset,Cash,Primary operating checking account,false
+1012,Money Market Account,Asset,Cash,Interest-bearing money market account,false
+1013,Petty Cash,Asset,Cash,Small on-hand cash for minor expenses,false
+1014,Restricted Cash,Asset,Cash,Cash restricted by donors for specific purposes,false
+1100,Grants Receivable,Asset,Receivable,Approved grants not yet received,false
+1110,Pledges Receivable,Asset,Receivable,Unconditional promises to give,false
+1120,Allowance for Uncollectible Pledges,Asset,Receivable,Estimated uncollectible pledges (contra),false
+1130,Other Receivables,Asset,Receivable,Amounts due from other sources,false
+1200,Prepaid Expenses,Asset,Prepaid,Payments made in advance,false
+1300,Investments,Asset,Investment,Header for investment accounts,true
+1310,Short-Term Investments,Asset,Investment,Investments maturing within one year,false
+1320,Long-Term Investments,Asset,Investment,Endowment and long-term portfolio,false
+1400,Fixed Assets,Asset,Fixed Asset,Header for long-term tangible assets,true
+1410,Furniture and Equipment,Asset,Fixed Asset,Office furniture and program equipment,false
+1420,Vehicles,Asset,Fixed Asset,Organization vehicles,false
+1430,Building,Asset,Fixed Asset,Organization-owned buildings,false
+1440,Land,Asset,Fixed Asset,Organization-owned land,false
+1450,Accumulated Depreciation,Asset,Fixed Asset,Total depreciation (contra),false
+2000,Liabilities,Liability,Header,Top-level liability category,true
+2010,Accounts Payable,Liability,Payable,Amounts owed to vendors,false
+2100,Accrued Liabilities,Liability,Accrued,Expenses incurred but not yet paid,false
+2200,Payroll Liabilities,Liability,Payroll,Header for payroll obligations,true
+2210,Salaries and Wages Payable,Liability,Payroll,Wages earned but not yet paid,false
+2220,Payroll Taxes Payable,Liability,Payroll,Payroll taxes withheld and owed,false
+2230,Employee Benefits Payable,Liability,Payroll,Accrued employee benefit obligations,false
+2300,Deferred Revenue,Liability,Deferred,Grant funds and fees received in advance,false
+2400,Refundable Advances,Liability,Deferred,Conditional grant funds that may be returned,false
+2500,Notes Payable,Liability,Loan,Loans and notes payable,false
+2600,Capital Lease Obligations,Liability,Lease,Long-term lease obligations,false
+3000,Net Assets,Equity,Header,Top-level net assets category,true
+3100,Unrestricted Net Assets,Equity,Without Donor Restrictions,Net assets without donor restrictions,false
+3200,Board-Designated Net Assets,Equity,Without Donor Restrictions,Unrestricted assets designated by the board,false
+3300,Temporarily Restricted Net Assets,Equity,With Donor Restrictions,Net assets with time or purpose restrictions,false
+3400,Permanently Restricted Net Assets,Equity,With Donor Restrictions,Endowment funds with permanent restrictions,false
+4000,Revenue and Support,Revenue,Header,Top-level revenue category,true
+4010,Individual Contributions,Revenue,Contributions,Donations from individual donors,false
+4020,Corporate Contributions,Revenue,Contributions,Donations from businesses,false
+4030,Foundation Grants,Revenue,Grants,Grants from private foundations,false
+4040,Government Grants,Revenue,Grants,"Federal, state, and local government grants",false
+4050,In-Kind Contributions,Revenue,Contributions,Non-cash donations of goods and services,false
+4060,Special Events Revenue,Revenue,Events,Gross revenue from fundraising events,false
+4070,Less: Direct Event Costs,Revenue,Events,Direct costs of fundraising events (contra),false
+4080,Membership Dues,Revenue,Program Revenue,Annual membership fees,false
+4090,Program Service Fees,Revenue,Program Revenue,Fees charged for program services,false
+4100,Investment Income,Revenue,Investment,"Interest, dividends, and investment returns",false
+4110,Realized/Unrealized Gains,Revenue,Investment,Gains or losses on investment portfolio,false
+4120,Net Assets Released from Restrictions,Revenue,Released,Restricted funds released upon meeting conditions,false
+4130,Other Revenue,Revenue,Other,Revenue from other sources,false
+5000,Program Expenses,Expense,Header,Top-level program expense category,true
+5010,Program A Expenses,Expense,Program,Direct costs for primary program area A,false
+5020,Program B Expenses,Expense,Program,Direct costs for program area B,false
+5030,Program C Expenses,Expense,Program,Direct costs for program area C,false
+5040,Program Salaries,Expense,Program,Staff salaries allocated to program delivery,false
+5050,Program Supplies,Expense,Program,Supplies and materials for program activities,false
+5060,Program Travel,Expense,Program,Travel costs related to program delivery,false
+5070,Grants to Other Organizations,Expense,Program,Sub-grants to partner organizations,false
+5080,Participant Assistance,Expense,Program,Direct financial assistance to participants,false
+6000,Management and General,Expense,Header,Top-level admin expense category,true
+6010,Administrative Salaries,Expense,Administrative,Salaries for executive and admin staff,false
+6020,Payroll Taxes and Benefits,Expense,Administrative,Employer payroll taxes and employee benefits,false
+6030,Rent and Occupancy,Expense,Administrative,"Office rent, utilities, and facility costs",false
+6040,Office Supplies and Equipment,Expense,Administrative,General office supplies and small equipment,false
+6050,Professional Fees,Expense,Administrative,"Audit, legal, and accounting fees",false
+6060,Insurance,Expense,Administrative,"General liability, D&O, and property insurance",false
+6070,Technology and Software,Expense,Administrative,"IT infrastructure, software subscriptions",false
+6080,Depreciation,Expense,Administrative,Depreciation of administrative assets,false
+6090,Bank and Merchant Fees,Expense,Administrative,Bank charges and payment processing fees,false
+6100,Miscellaneous Administrative,Expense,Administrative,Other administrative expenses,false
+7000,Fundraising Expenses,Expense,Header,Top-level fundraising expense category,true
+7010,Fundraising Salaries,Expense,Fundraising,Salaries for development staff,false
+7020,Donor Communications,Expense,Fundraising,"Mailings, newsletters, and donor communications",false
+7030,Fundraising Events,Expense,Fundraising,Costs of planning fundraising events,false
+7040,Grant Writing,Expense,Fundraising,Grant proposal development costs,false
+7050,Donor Management Software,Expense,Fundraising,CRM and donor management systems,false
+7060,Fundraising Travel,Expense,Fundraising,Travel for donor cultivation,false

@@ -1,0 +1,625 @@
+{
+  "id": "nonprofit",
+  "name": "Nonprofit Organization",
+  "organizationType": "nonprofit",
+  "description": "A chart of accounts designed for 501(c)(3) nonprofit organizations. Includes fund accounting with unrestricted, temporarily restricted, and permanently restricted net asset classifications, plus grant tracking and program expense categories.",
+  "version": "1.0.0",
+  "accounts": [
+    {
+      "code": "1000",
+      "name": "Assets",
+      "type": "Asset",
+      "subtype": "Header",
+      "description": "Top-level asset category",
+      "isHeader": true
+    },
+    {
+      "code": "1010",
+      "name": "Cash and Cash Equivalents",
+      "type": "Asset",
+      "subtype": "Cash",
+      "description": "Header for cash accounts",
+      "isHeader": true
+    },
+    {
+      "code": "1011",
+      "name": "Operating Checking Account",
+      "type": "Asset",
+      "subtype": "Cash",
+      "description": "Primary operating checking account",
+      "isHeader": false
+    },
+    {
+      "code": "1012",
+      "name": "Money Market Account",
+      "type": "Asset",
+      "subtype": "Cash",
+      "description": "Interest-bearing money market account",
+      "isHeader": false
+    },
+    {
+      "code": "1013",
+      "name": "Petty Cash",
+      "type": "Asset",
+      "subtype": "Cash",
+      "description": "Small on-hand cash for minor expenses",
+      "isHeader": false
+    },
+    {
+      "code": "1014",
+      "name": "Restricted Cash",
+      "type": "Asset",
+      "subtype": "Cash",
+      "description": "Cash restricted by donors for specific purposes",
+      "isHeader": false
+    },
+    {
+      "code": "1100",
+      "name": "Grants Receivable",
+      "type": "Asset",
+      "subtype": "Receivable",
+      "description": "Approved grants not yet received",
+      "isHeader": false
+    },
+    {
+      "code": "1110",
+      "name": "Pledges Receivable",
+      "type": "Asset",
+      "subtype": "Receivable",
+      "description": "Unconditional promises to give",
+      "isHeader": false
+    },
+    {
+      "code": "1120",
+      "name": "Allowance for Uncollectible Pledges",
+      "type": "Asset",
+      "subtype": "Receivable",
+      "description": "Estimated uncollectible pledges (contra)",
+      "isHeader": false
+    },
+    {
+      "code": "1130",
+      "name": "Other Receivables",
+      "type": "Asset",
+      "subtype": "Receivable",
+      "description": "Amounts due from other sources",
+      "isHeader": false
+    },
+    {
+      "code": "1200",
+      "name": "Prepaid Expenses",
+      "type": "Asset",
+      "subtype": "Prepaid",
+      "description": "Payments made in advance",
+      "isHeader": false
+    },
+    {
+      "code": "1300",
+      "name": "Investments",
+      "type": "Asset",
+      "subtype": "Investment",
+      "description": "Header for investment accounts",
+      "isHeader": true
+    },
+    {
+      "code": "1310",
+      "name": "Short-Term Investments",
+      "type": "Asset",
+      "subtype": "Investment",
+      "description": "Investments maturing within one year",
+      "isHeader": false
+    },
+    {
+      "code": "1320",
+      "name": "Long-Term Investments",
+      "type": "Asset",
+      "subtype": "Investment",
+      "description": "Endowment and long-term portfolio",
+      "isHeader": false
+    },
+    {
+      "code": "1400",
+      "name": "Fixed Assets",
+      "type": "Asset",
+      "subtype": "Fixed Asset",
+      "description": "Header for long-term tangible assets",
+      "isHeader": true
+    },
+    {
+      "code": "1410",
+      "name": "Furniture and Equipment",
+      "type": "Asset",
+      "subtype": "Fixed Asset",
+      "description": "Office furniture and program equipment",
+      "isHeader": false
+    },
+    {
+      "code": "1420",
+      "name": "Vehicles",
+      "type": "Asset",
+      "subtype": "Fixed Asset",
+      "description": "Organization vehicles",
+      "isHeader": false
+    },
+    {
+      "code": "1430",
+      "name": "Building",
+      "type": "Asset",
+      "subtype": "Fixed Asset",
+      "description": "Organization-owned buildings",
+      "isHeader": false
+    },
+    {
+      "code": "1440",
+      "name": "Land",
+      "type": "Asset",
+      "subtype": "Fixed Asset",
+      "description": "Organization-owned land",
+      "isHeader": false
+    },
+    {
+      "code": "1450",
+      "name": "Accumulated Depreciation",
+      "type": "Asset",
+      "subtype": "Fixed Asset",
+      "description": "Total depreciation (contra)",
+      "isHeader": false
+    },
+    {
+      "code": "2000",
+      "name": "Liabilities",
+      "type": "Liability",
+      "subtype": "Header",
+      "description": "Top-level liability category",
+      "isHeader": true
+    },
+    {
+      "code": "2010",
+      "name": "Accounts Payable",
+      "type": "Liability",
+      "subtype": "Payable",
+      "description": "Amounts owed to vendors",
+      "isHeader": false
+    },
+    {
+      "code": "2100",
+      "name": "Accrued Liabilities",
+      "type": "Liability",
+      "subtype": "Accrued",
+      "description": "Expenses incurred but not yet paid",
+      "isHeader": false
+    },
+    {
+      "code": "2200",
+      "name": "Payroll Liabilities",
+      "type": "Liability",
+      "subtype": "Payroll",
+      "description": "Header for payroll obligations",
+      "isHeader": true
+    },
+    {
+      "code": "2210",
+      "name": "Salaries and Wages Payable",
+      "type": "Liability",
+      "subtype": "Payroll",
+      "description": "Wages earned but not yet paid",
+      "isHeader": false
+    },
+    {
+      "code": "2220",
+      "name": "Payroll Taxes Payable",
+      "type": "Liability",
+      "subtype": "Payroll",
+      "description": "Payroll taxes withheld and owed",
+      "isHeader": false
+    },
+    {
+      "code": "2230",
+      "name": "Employee Benefits Payable",
+      "type": "Liability",
+      "subtype": "Payroll",
+      "description": "Accrued employee benefit obligations",
+      "isHeader": false
+    },
+    {
+      "code": "2300",
+      "name": "Deferred Revenue",
+      "type": "Liability",
+      "subtype": "Deferred",
+      "description": "Grant funds and fees received in advance",
+      "isHeader": false
+    },
+    {
+      "code": "2400",
+      "name": "Refundable Advances",
+      "type": "Liability",
+      "subtype": "Deferred",
+      "description": "Conditional grant funds that may be returned",
+      "isHeader": false
+    },
+    {
+      "code": "2500",
+      "name": "Notes Payable",
+      "type": "Liability",
+      "subtype": "Loan",
+      "description": "Loans and notes payable",
+      "isHeader": false
+    },
+    {
+      "code": "2600",
+      "name": "Capital Lease Obligations",
+      "type": "Liability",
+      "subtype": "Lease",
+      "description": "Long-term lease obligations",
+      "isHeader": false
+    },
+    {
+      "code": "3000",
+      "name": "Net Assets",
+      "type": "Equity",
+      "subtype": "Header",
+      "description": "Top-level net assets category",
+      "isHeader": true
+    },
+    {
+      "code": "3100",
+      "name": "Unrestricted Net Assets",
+      "type": "Equity",
+      "subtype": "Without Donor Restrictions",
+      "description": "Net assets without donor restrictions",
+      "isHeader": false
+    },
+    {
+      "code": "3200",
+      "name": "Board-Designated Net Assets",
+      "type": "Equity",
+      "subtype": "Without Donor Restrictions",
+      "description": "Unrestricted assets designated by the board",
+      "isHeader": false
+    },
+    {
+      "code": "3300",
+      "name": "Temporarily Restricted Net Assets",
+      "type": "Equity",
+      "subtype": "With Donor Restrictions",
+      "description": "Net assets with time or purpose restrictions",
+      "isHeader": false
+    },
+    {
+      "code": "3400",
+      "name": "Permanently Restricted Net Assets",
+      "type": "Equity",
+      "subtype": "With Donor Restrictions",
+      "description": "Endowment funds with permanent restrictions",
+      "isHeader": false
+    },
+    {
+      "code": "4000",
+      "name": "Revenue and Support",
+      "type": "Revenue",
+      "subtype": "Header",
+      "description": "Top-level revenue category",
+      "isHeader": true
+    },
+    {
+      "code": "4010",
+      "name": "Individual Contributions",
+      "type": "Revenue",
+      "subtype": "Contributions",
+      "description": "Donations from individual donors",
+      "isHeader": false
+    },
+    {
+      "code": "4020",
+      "name": "Corporate Contributions",
+      "type": "Revenue",
+      "subtype": "Contributions",
+      "description": "Donations from businesses",
+      "isHeader": false
+    },
+    {
+      "code": "4030",
+      "name": "Foundation Grants",
+      "type": "Revenue",
+      "subtype": "Grants",
+      "description": "Grants from private foundations",
+      "isHeader": false
+    },
+    {
+      "code": "4040",
+      "name": "Government Grants",
+      "type": "Revenue",
+      "subtype": "Grants",
+      "description": "Federal, state, and local government grants",
+      "isHeader": false
+    },
+    {
+      "code": "4050",
+      "name": "In-Kind Contributions",
+      "type": "Revenue",
+      "subtype": "Contributions",
+      "description": "Non-cash donations of goods and services",
+      "isHeader": false
+    },
+    {
+      "code": "4060",
+      "name": "Special Events Revenue",
+      "type": "Revenue",
+      "subtype": "Events",
+      "description": "Gross revenue from fundraising events",
+      "isHeader": false
+    },
+    {
+      "code": "4070",
+      "name": "Less: Direct Event Costs",
+      "type": "Revenue",
+      "subtype": "Events",
+      "description": "Direct costs of fundraising events (contra)",
+      "isHeader": false
+    },
+    {
+      "code": "4080",
+      "name": "Membership Dues",
+      "type": "Revenue",
+      "subtype": "Program Revenue",
+      "description": "Annual membership fees",
+      "isHeader": false
+    },
+    {
+      "code": "4090",
+      "name": "Program Service Fees",
+      "type": "Revenue",
+      "subtype": "Program Revenue",
+      "description": "Fees charged for program services",
+      "isHeader": false
+    },
+    {
+      "code": "4100",
+      "name": "Investment Income",
+      "type": "Revenue",
+      "subtype": "Investment",
+      "description": "Interest, dividends, and investment returns",
+      "isHeader": false
+    },
+    {
+      "code": "4110",
+      "name": "Realized/Unrealized Gains",
+      "type": "Revenue",
+      "subtype": "Investment",
+      "description": "Gains or losses on investment portfolio",
+      "isHeader": false
+    },
+    {
+      "code": "4120",
+      "name": "Net Assets Released from Restrictions",
+      "type": "Revenue",
+      "subtype": "Released",
+      "description": "Restricted funds released upon meeting conditions",
+      "isHeader": false
+    },
+    {
+      "code": "4130",
+      "name": "Other Revenue",
+      "type": "Revenue",
+      "subtype": "Other",
+      "description": "Revenue from other sources",
+      "isHeader": false
+    },
+    {
+      "code": "5000",
+      "name": "Program Expenses",
+      "type": "Expense",
+      "subtype": "Header",
+      "description": "Top-level program expense category",
+      "isHeader": true
+    },
+    {
+      "code": "5010",
+      "name": "Program A Expenses",
+      "type": "Expense",
+      "subtype": "Program",
+      "description": "Direct costs for primary program area A",
+      "isHeader": false
+    },
+    {
+      "code": "5020",
+      "name": "Program B Expenses",
+      "type": "Expense",
+      "subtype": "Program",
+      "description": "Direct costs for program area B",
+      "isHeader": false
+    },
+    {
+      "code": "5030",
+      "name": "Program C Expenses",
+      "type": "Expense",
+      "subtype": "Program",
+      "description": "Direct costs for program area C",
+      "isHeader": false
+    },
+    {
+      "code": "5040",
+      "name": "Program Salaries",
+      "type": "Expense",
+      "subtype": "Program",
+      "description": "Staff salaries allocated to program delivery",
+      "isHeader": false
+    },
+    {
+      "code": "5050",
+      "name": "Program Supplies",
+      "type": "Expense",
+      "subtype": "Program",
+      "description": "Supplies and materials for program activities",
+      "isHeader": false
+    },
+    {
+      "code": "5060",
+      "name": "Program Travel",
+      "type": "Expense",
+      "subtype": "Program",
+      "description": "Travel costs related to program delivery",
+      "isHeader": false
+    },
+    {
+      "code": "5070",
+      "name": "Grants to Other Organizations",
+      "type": "Expense",
+      "subtype": "Program",
+      "description": "Sub-grants to partner organizations",
+      "isHeader": false
+    },
+    {
+      "code": "5080",
+      "name": "Participant Assistance",
+      "type": "Expense",
+      "subtype": "Program",
+      "description": "Direct financial assistance to participants",
+      "isHeader": false
+    },
+    {
+      "code": "6000",
+      "name": "Management and General",
+      "type": "Expense",
+      "subtype": "Header",
+      "description": "Top-level admin expense category",
+      "isHeader": true
+    },
+    {
+      "code": "6010",
+      "name": "Administrative Salaries",
+      "type": "Expense",
+      "subtype": "Administrative",
+      "description": "Salaries for executive and admin staff",
+      "isHeader": false
+    },
+    {
+      "code": "6020",
+      "name": "Payroll Taxes and Benefits",
+      "type": "Expense",
+      "subtype": "Administrative",
+      "description": "Employer payroll taxes and employee benefits",
+      "isHeader": false
+    },
+    {
+      "code": "6030",
+      "name": "Rent and Occupancy",
+      "type": "Expense",
+      "subtype": "Administrative",
+      "description": "Office rent, utilities, and facility costs",
+      "isHeader": false
+    },
+    {
+      "code": "6040",
+      "name": "Office Supplies and Equipment",
+      "type": "Expense",
+      "subtype": "Administrative",
+      "description": "General office supplies and small equipment",
+      "isHeader": false
+    },
+    {
+      "code": "6050",
+      "name": "Professional Fees",
+      "type": "Expense",
+      "subtype": "Administrative",
+      "description": "Audit, legal, and accounting fees",
+      "isHeader": false
+    },
+    {
+      "code": "6060",
+      "name": "Insurance",
+      "type": "Expense",
+      "subtype": "Administrative",
+      "description": "General liability, D&O, and property insurance",
+      "isHeader": false
+    },
+    {
+      "code": "6070",
+      "name": "Technology and Software",
+      "type": "Expense",
+      "subtype": "Administrative",
+      "description": "IT infrastructure, software subscriptions",
+      "isHeader": false
+    },
+    {
+      "code": "6080",
+      "name": "Depreciation",
+      "type": "Expense",
+      "subtype": "Administrative",
+      "description": "Depreciation of administrative assets",
+      "isHeader": false
+    },
+    {
+      "code": "6090",
+      "name": "Bank and Merchant Fees",
+      "type": "Expense",
+      "subtype": "Administrative",
+      "description": "Bank charges and payment processing fees",
+      "isHeader": false
+    },
+    {
+      "code": "6100",
+      "name": "Miscellaneous Administrative",
+      "type": "Expense",
+      "subtype": "Administrative",
+      "description": "Other administrative expenses",
+      "isHeader": false
+    },
+    {
+      "code": "7000",
+      "name": "Fundraising Expenses",
+      "type": "Expense",
+      "subtype": "Header",
+      "description": "Top-level fundraising expense category",
+      "isHeader": true
+    },
+    {
+      "code": "7010",
+      "name": "Fundraising Salaries",
+      "type": "Expense",
+      "subtype": "Fundraising",
+      "description": "Salaries for development staff",
+      "isHeader": false
+    },
+    {
+      "code": "7020",
+      "name": "Donor Communications",
+      "type": "Expense",
+      "subtype": "Fundraising",
+      "description": "Mailings, newsletters, and donor communications",
+      "isHeader": false
+    },
+    {
+      "code": "7030",
+      "name": "Fundraising Events",
+      "type": "Expense",
+      "subtype": "Fundraising",
+      "description": "Costs of planning fundraising events",
+      "isHeader": false
+    },
+    {
+      "code": "7040",
+      "name": "Grant Writing",
+      "type": "Expense",
+      "subtype": "Fundraising",
+      "description": "Grant proposal development costs",
+      "isHeader": false
+    },
+    {
+      "code": "7050",
+      "name": "Donor Management Software",
+      "type": "Expense",
+      "subtype": "Fundraising",
+      "description": "CRM and donor management systems",
+      "isHeader": false
+    },
+    {
+      "code": "7060",
+      "name": "Fundraising Travel",
+      "type": "Expense",
+      "subtype": "Fundraising",
+      "description": "Travel for donor cultivation",
+      "isHeader": false
+    }
+  ]
+}
