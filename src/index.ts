@@ -15,7 +15,7 @@ export const nonprofit: ChartOfAccounts = nonprofitData as ChartOfAccounts;
 export const church: ChartOfAccounts = churchData as ChartOfAccounts;
 
 /** All available templates indexed by organization type. */
-export const templates: Record<OrganizationType, ChartOfAccounts> = {
+const templates: Record<OrganizationType, ChartOfAccounts> = {
   "small-business": smallBusiness,
   nonprofit,
   church,
@@ -24,11 +24,25 @@ export const templates: Record<OrganizationType, ChartOfAccounts> = {
 /**
  * Get a chart of accounts template by organization type.
  *
- * @param type - The organization type
- * @returns The chart of accounts template, or undefined if not found
+ * @param type - The organization type: "small-business", "nonprofit", or "church"
+ * @returns The matching ChartOfAccounts template
+ * @throws Error if the organization type is not found
  */
-export function getTemplate(type: OrganizationType): ChartOfAccounts | undefined {
-  return templates[type];
+export function getTemplate(type: OrganizationType): ChartOfAccounts {
+  const template = templates[type];
+  if (!template) {
+    throw new Error(`Unknown organization type: ${type}`);
+  }
+  return template;
+}
+
+/**
+ * Get all available chart of accounts templates.
+ *
+ * @returns An array of all ChartOfAccounts templates
+ */
+export function getAllTemplates(): ChartOfAccounts[] {
+  return Object.values(templates);
 }
 
 /**

@@ -41,6 +41,7 @@ import {
   church,
   getTemplate,
   getAvailableTypes,
+  getAllTemplates,
 } from "@holdings-io/chart-of-accounts-template";
 import type { Account, ChartOfAccounts } from "@holdings-io/chart-of-accounts-template";
 
@@ -56,6 +57,9 @@ const expenses = smallBusiness.accounts.filter(
 
 // List available types
 console.log(getAvailableTypes()); // ["small-business", "nonprofit", "church"]
+// Get all templates at once
+const all = getAllTemplates();
+all.forEach((t) => console.log(t.name, "-", t.accounts.length, "accounts"));
 ```
 
 ### JavaScript

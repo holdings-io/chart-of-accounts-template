@@ -9,6 +9,7 @@ import {
   nonprofit,
   church,
   getTemplate,
+  getAllTemplates,
   getAvailableTypes,
 } from "@holdings-io/chart-of-accounts-template";
 import type { Account, ChartOfAccounts } from "@holdings-io/chart-of-accounts-template";
